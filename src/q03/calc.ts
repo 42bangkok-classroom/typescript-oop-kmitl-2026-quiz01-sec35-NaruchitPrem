@@ -3,6 +3,12 @@ let num1: number = +process.argv[3];
 let num2: number = +process.argv[4];
 let operToLow: string = oper.toLowerCase()
 
+
+if (!num2 || !num1 || !oper) {
+  console.log('Invalid Input');
+  process.exit();
+}
+
 if(Number.isNaN(num1) || Number.isNaN(num2)){
     console.log('Invalid input');
     process.exit();

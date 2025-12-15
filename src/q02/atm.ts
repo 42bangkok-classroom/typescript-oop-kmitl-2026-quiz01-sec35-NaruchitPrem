@@ -1,5 +1,17 @@
+import { wrap } from "module";
+
 let balance: number = +process.argv[2];
 let withdraw: number = +process.argv[3];
+
+if (!balance) {
+  console.log('Invalid Input');
+  process.exit();
+}
+if (!withdraw) {
+  console.log('Invalid Input');
+  process.exit();
+}
+
 
 if(Number.isNaN(balance)){
     console.log('Invalid Input');

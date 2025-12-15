@@ -1,5 +1,8 @@
 let score: number = Number(process.argv[2]);
-
+if (!score) {
+  console.log('Invalid Input');
+  process.exit();
+}
 
 if(Number.isNaN(score)){
   console.log('Invalid Input');
