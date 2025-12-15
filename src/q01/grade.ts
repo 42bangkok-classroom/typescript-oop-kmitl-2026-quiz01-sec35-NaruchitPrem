@@ -1,10 +1,11 @@
 let score: number = Number(process.argv[2]);
-if (!score && score != 0) {
-  console.log('Invalid Input');
-  process.exit();
+
+if (process.argv[2] === "") {
+    console.log('Invalid Input');
+    process.exit();
 }
 
-if(Number.isNaN(score)){
+if(Number.isNaN(score) || score < 0 || score > 100){
   console.log('Invalid Input');
 }else if(score < 0 || score > 100){
   console.log('Invalid Input');
