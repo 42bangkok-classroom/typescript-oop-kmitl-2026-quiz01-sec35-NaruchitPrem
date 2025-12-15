@@ -4,7 +4,7 @@ let num2: number = +process.argv[4];
 let operToLow: string = oper.toLowerCase()
 
 
-if (!num2 || !num1 || !oper) {
+if (!num2 || !num1 || !oper  && num1 != 0 && num2 != 0) {
   console.log('Invalid Input');
   process.exit();
 }

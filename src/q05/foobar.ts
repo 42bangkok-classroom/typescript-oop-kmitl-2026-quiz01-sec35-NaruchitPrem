@@ -1,7 +1,7 @@
 export{}
 let input = +process.argv[2];
 
-if (!input) {
+if (!input && input != 0) {
   console.log('Invalid Input');
   process.exit();
 }

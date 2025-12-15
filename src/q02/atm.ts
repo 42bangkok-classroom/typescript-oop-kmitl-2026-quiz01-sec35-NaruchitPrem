@@ -3,11 +3,11 @@ import { wrap } from "module";
 let balance: number = +process.argv[2];
 let withdraw: number = +process.argv[3];
 
-if (!balance) {
+if (!balance && balance != 0) {
   console.log('Invalid Input');
   process.exit();
 }
-if (!withdraw) {
+if (!withdraw && withdraw != 0) {
   console.log('Invalid Input');
   process.exit();
 }

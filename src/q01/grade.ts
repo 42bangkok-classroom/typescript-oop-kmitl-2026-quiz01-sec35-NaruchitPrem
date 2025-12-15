@@ -1,5 +1,5 @@
 let score: number = Number(process.argv[2]);
-if (!score) {
+if (!score && score != 0) {
   console.log('Invalid Input');
   process.exit();
 }
