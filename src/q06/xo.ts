@@ -13,7 +13,7 @@ for (let i = 1; i <= input; i++){
   let result = ''
   for (let j = 1; j <= input; j++){
     if(i == 1 || i == input || j == 1 || j == input){
-      result += '1';
+      result += 'x';
     }else {
       result += '0';
     }
