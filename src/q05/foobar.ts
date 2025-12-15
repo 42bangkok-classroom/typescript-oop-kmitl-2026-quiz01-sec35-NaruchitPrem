@@ -17,6 +17,6 @@ for (let i = 1; i <= input; i++){
   }else if (i % 7 === 0){
     console.log('Bar');
   }else if (!(i % 3 === 0 || i % 7 === 0)){
-    console.log(i);
+    console.log(`${i}`);
   }
 }
