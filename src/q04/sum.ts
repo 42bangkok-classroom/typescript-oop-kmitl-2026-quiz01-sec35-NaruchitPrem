@@ -14,6 +14,7 @@ if (process.argv[2] === "") {
 for (let i = 1; i < process.argv.length; i++) {
     
     let input: number = (+process.argv[i]);
+    
     if (!input && input != 0) {
         console.log('Invalid Input');
         process.exit();
@@ -22,6 +23,7 @@ for (let i = 1; i < process.argv.length; i++) {
         console.log('Invalid Input');
         process.exit();
     }
+    
     if (!isNaN(Number(input))) {
       number = Number(input);
       result = result + number;
