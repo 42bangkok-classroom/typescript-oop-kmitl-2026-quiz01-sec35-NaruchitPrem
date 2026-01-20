@@ -1,12 +1,11 @@
-export{}
 let input = +process.argv[2];
 
 if (!input && input != 0) {
     console.log('Invalid Input');
     process.exit();
 }
-if (Number.isNaN(input) || input <= 0){
-    console.log('Invalid input');
+if (Number.isNaN(input) || input <= 0 || !Number.isInteger(input)){
+    console.log('Invalid Input');
     process.exit()
 }
 
