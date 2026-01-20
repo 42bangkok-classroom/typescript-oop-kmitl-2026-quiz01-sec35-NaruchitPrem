@@ -6,9 +6,9 @@ if (process.argv[2] === "") {
   process.exit();
 }
 
-if (Number.isNaN(input) || input <= 0){
+if (Number.isNaN(input) || input <= 0 || !Number.isInteger(input)) {
     console.log('Invalid Input');
-    process.exit()
+    process.exit();
 }
 
 for (let i = 1; i <= input; i++){
