@@ -1,6 +1,10 @@
-export{}
 let result: number = 0;
 let number: number
+
+if (process.argv[2] === "" || process.argv[3] === "" || process.argv[1] === "") {
+    console.log('Invalid input');
+    process.exit();
+}
 
 for (let i = 2; i < process.argv.length; i++) {
     

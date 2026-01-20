@@ -12,7 +12,7 @@ if (Number.isNaN(input) || input <= 0){
 }
 
 for (let i = 1; i <= input; i++){
-  if (i % 5 === 0 && i % 3 === 0){
+  if (i % 7 === 0 && i % 3 === 0){
     console.log('FooBar');
   }else if (i % 3 === 0){
     console.log('Foo');

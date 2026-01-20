@@ -38,4 +38,3 @@ if(operToLow == 'add'){
     result = num1 * num2;
     console.log(`${result}`)
 }
-
