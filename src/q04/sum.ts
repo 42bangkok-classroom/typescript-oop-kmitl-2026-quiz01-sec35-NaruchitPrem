@@ -1,12 +1,12 @@
 let result: number = 0;
 let number: number
 
-if (Number.isNaN(+process.argv[1]) || +process.argv[1] <= 0 || !Number.isInteger(+process.argv[1])) {
+if (Number.isNaN(+process.argv[2]) || +process.argv[2] <= 0 || !Number.isInteger(+process.argv[2])) {
     console.log('Invalid Input');
     process.exit();
 }
 
-if (process.argv[1] === "") {
+if (process.argv[2] === "") {
     console.log('Invalid Input');
     process.exit();
 }
