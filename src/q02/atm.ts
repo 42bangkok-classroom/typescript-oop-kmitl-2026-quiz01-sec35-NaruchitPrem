@@ -1,5 +1,3 @@
-import { wrap } from "module";
-
 let balance: number = +process.argv[2];
 let withdraw: number = +process.argv[3];
 

@@ -3,6 +3,10 @@ let num1: number = +process.argv[3];
 let num2: number = +process.argv[4];
 let operToLow: string = oper.toLowerCase()
 
+if (process.argv[2] === "" || process.argv[3] === "" || process.argv[1] === "") {
+    console.log('Invalid Input');
+    process.exit();
+}
 
 if (!num2 || !num1 || !oper  && num1 != 0 && num2 != 0) {
   console.log('Invalid Input');
