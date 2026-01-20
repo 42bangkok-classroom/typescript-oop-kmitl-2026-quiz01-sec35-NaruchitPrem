@@ -8,10 +8,6 @@ if (process.argv[2] === "" || process.argv[3] === "" || process.argv[1] === "") 
     process.exit();
 }
 
-if (!num2 || !num1 || !oper  && num1 != 0 && num2 != 0) {
-  console.log('Invalid Input');
-  process.exit();
-}
 
 if(Number.isNaN(num1) || Number.isNaN(num2)){
     console.log('Invalid input');
