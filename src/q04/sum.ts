@@ -1,8 +1,13 @@
 let result: number = 0;
 let number: number
 
-if (process.argv[2] === "" || process.argv[3] === "" || process.argv[1] === "") {
-    console.log('Invalid input');
+if (Number.isNaN(+process.argv[1]) || +process.argv[1] <= 0 || !Number.isInteger(+process.argv[1])) {
+    console.log('Invalid Input');
+    process.exit();
+}
+
+if (process.argv[1] === "") {
+    console.log('Invalid Input');
     process.exit();
 }
 
